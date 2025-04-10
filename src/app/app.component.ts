@@ -3,10 +3,10 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html', // Updated templateUrl path to match existing file
+  standalone: true, // Asegúrate de que sea standalone
+  imports: [RouterOutlet], // Importa RouterModule para enrutamiento
 })
 export class AppComponent {
-  title = 'prueba';
+  //title = 'prueba';
 }
